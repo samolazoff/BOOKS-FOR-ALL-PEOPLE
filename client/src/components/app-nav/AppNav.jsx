@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './appNav.sass';
 
@@ -6,13 +7,13 @@ const AppNav = () => {
     return (
         <nav className='app-nav'>
             <ul className='nav-list flx-r'>
-                <li className='nav__item'><a href="/">HOME</a></li>
-                <li className='nav__item'><a href="/books">Books</a></li>
-                <li className='nav__item'><a href="/forum">FORUM</a></li>
-                <li className='nav__item'><a href="/loggin">Login In</a></li>
-                <li className='nav__item'><a href="/registration">Login up</a></li>
-                <li className='nav__item'><a href="/card">book exchange</a></li>
-                <li className='nav__item'><a href="/profile">Profile</a></li>
+                <li className='nav__item'><NavLink to="/">HOME</NavLink></li>
+                <li className='nav__item'><NavLink to="/books">Books</NavLink></li>
+                <li className='nav__item'><NavLink to="/forum">FORUM</NavLink></li>
+                <li className='nav__item'><NavLink to="/loggin">Login In</NavLink></li>
+                <li className='nav__item'><NavLink to="/registration">Login up</NavLink></li>
+                <li className='nav__item'><NavLink to="/card">book exchange</NavLink></li>
+                <li className='nav__item'><NavLink to="/profile">Profile</NavLink></li>
                 <li className='nav__item'><button className='btn btn__exit'>Exit</button></li>
             </ul> 
         </nav>
