@@ -3,8 +3,14 @@
 @import ../style/samolazoff-framework
 @import ../style/sass-mixin
 
+.title__block
+    padding: 40px 25px
+    font-size: 48px    
 .app
     width: 100%
     min-height: 100vh
     font-family: $font-primary
-    @include flex-position(space-between, center )
+    @include flex-position(space-between, center)
+    &-main
+        width: 100%
+        min-height: 500px
