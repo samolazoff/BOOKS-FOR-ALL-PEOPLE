@@ -1,0 +1,15 @@
+@import ../style/var
+@import ../style/sass-mixin
+.app-footer
+    width: 100%
+    height: 60px
+    background-color: $color-bgc-primary
+    @include flex-position(center, center)
+    .container
+        @include flex-position(space-between, center )
+.footer-link
+    font-style: italic
+    font-weight: 600
+    &:hover
+        color: $color-txt-dop
+        

@@ -1,0 +1,15 @@
+@import ../style/var
+@import ../style/sass-mixin
+.app-nav
+    .nav-list
+        @include flex-position(flex-end, center)
+        gap: 20px
+        .nav__item
+            font-weight: 500
+            text-transform: uppercase
+            padding: 10px 20px
+            border-radius: 15px
+            &:hover
+                color: white
+                background-color: $color-bgc-hover
+            
