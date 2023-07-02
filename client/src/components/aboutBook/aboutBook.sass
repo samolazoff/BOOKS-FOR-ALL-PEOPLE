@@ -1,0 +1,15 @@
+@import ../style/sass-mixin.sass
+
+.block-box-book
+    padding-bottom: 25px
+    @include flex-position(flex-start, flex-start)
+.box-book
+    @include flex-position(center, flex-start)
+    gap: 40px
+    &__img
+        max-width: 50%
+    &-content
+        @include flex-position(flex-start, flex-start)
+        gap: 10px
+    &__txt
+        font-size: 24px
