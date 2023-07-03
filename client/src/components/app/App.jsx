@@ -5,6 +5,7 @@ import Home from '../home/Home';
 import Books from '../books/Books';
 import AboutBook from '../aboutBook/AboutBook';
 import Login from '../login/Login';
+import Registration from '../registration/Registration';
 
 import './app.sass';
 const dataBooks = [
@@ -98,6 +99,7 @@ function App() {
                 <Route path='books' element={<Books dataBooks={dataBooks}></Books>}></Route>
                 <Route path='books/:id' element={<AboutBook dataBooks={dataBooks}></AboutBook>}></Route>
                 <Route path='login' element={<Login></Login>}></Route>
+                <Route path='regist' element={<Registration></Registration>}></Route>
             </Route>
         </Routes>
     );
