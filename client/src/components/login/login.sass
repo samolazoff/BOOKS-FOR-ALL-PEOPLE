@@ -1,0 +1,26 @@
+@import ../style/sass-mixin
+@import ../style/var
+
+.block-login
+    height: 100%
+    @include flex-position(flex-start,center)
+.form-login
+    width: 280px
+    @include flex-position(flex-start, flex-start)
+    gap: 15px
+.input-login
+    width: 100%
+    font-size: 20px
+    gap: 10px
+.btn-login
+    align-self: center
+    padding: 5px 10px
+    border-radius: 10px
+    background-color: $color-bgc-primary
+    font-size: 20px
+    &:hover
+        background-color: $color-bgc-hover
+        color: $color-txt-dop
+.title-form
+    padding: 25px 0
+    font-size: 28px
